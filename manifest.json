@@ -1,0 +1,16 @@
+{
+  "name": "Notify!",
+  "description": "A Google Chrome extension!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "script_worker": ["background.js", "jquery-3.6.0.min.js"]
+  },
+  "action": {},
+  "content_scripts":[
+    {
+      "matches":["<all_urls>"],
+      "js": ["jquery-3.6.0.min.js", "script.js"]
+    }
+  ]
+}
